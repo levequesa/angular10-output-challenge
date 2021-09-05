@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular10-output-challenge';
+
+  onomatopoeias : string[] = [];
+
+  onReceiveNewOnomatopia(onomatopoeia : string) {
+    this.onomatopoeias?.push(onomatopoeia);
+  }
 }
